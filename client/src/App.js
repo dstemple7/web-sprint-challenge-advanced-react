@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import PlantList from "./components/PlantList";
 import ShoppingCart from "./components/ShoppingCart";
 import CheckoutForm from "./components/CheckoutForm";
+import PinkMe from './hooks/usePinkBackground'
 
 import "./App.css";
 
@@ -21,8 +22,15 @@ function App() {
     setCart(cart.filter((p) => p.id !== plant.id));
   };
 
+  const pinkMe = () => {
+    var body = document.getElementById("fullBody");
+    body.classList.toggle('body_toggle')
+  }
+
   return (
     <div>
+      <button id="pinkButton" onClick={pinkMe}>Pink Me</button>
+      {/* <PinkMe onClick={pinkMe}/> */}
       <Router>
         <nav className="container">
           <h1>
