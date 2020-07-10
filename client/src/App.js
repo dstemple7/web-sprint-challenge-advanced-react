@@ -21,8 +21,14 @@ function App() {
     setCart(cart.filter((p) => p.id !== plant.id));
   };
 
+  const pinkMe = () => {
+    var body = document.getElementById("fullBody");
+    body.classList.toggle('body_toggle')
+  }
+
   return (
     <div>
+      <button id="pinkButton" onClick={pinkMe}>Pink Me</button>
       <Router>
         <nav className="container">
           <h1>
