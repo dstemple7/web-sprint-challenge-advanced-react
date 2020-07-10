@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import PlantList from "./components/PlantList";
 import ShoppingCart from "./components/ShoppingCart";
 import CheckoutForm from "./components/CheckoutForm";
+import PinkMe from './hooks/usePinkBackground'
 
 import "./App.css";
 
@@ -29,6 +30,7 @@ function App() {
   return (
     <div>
       <button id="pinkButton" onClick={pinkMe}>Pink Me</button>
+      {/* <PinkMe onClick={pinkMe}/> */}
       <Router>
         <nav className="container">
           <h1>
