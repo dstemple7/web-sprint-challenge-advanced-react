@@ -31,7 +31,7 @@ function App() {
           <ul className="steps">
             <li>
               <NavLink exact to="/">
-                Plants
+                Plants, etc.
               </NavLink>
             </li>
             <li>
